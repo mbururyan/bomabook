@@ -48,6 +48,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.8
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,6 +61,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/brand/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -90,3 +94,24 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/brand/bomabook_icon_1024.png"
+  adaptive_icon_background: "#1f4a33"
+  adaptive_icon_foreground: "assets/brand/bomabook_icon_foreground_1024.png"
+  web:
+    generate: true
+    image_path: "assets/brand/bomabook_icon_1024.png"
+    background_color: "#1f4a33"
+    theme_color: "#1f4a33"
+
+flutter_native_splash:
+  color: "#1f4a33"
+  image: assets/brand/bomabook_splash_mark.png
+  android_12:
+    color: "#1f4a33"
+    image: assets/brand/bomabook_splash_android12.png
+    icon_background_color: "#1f4a33"
+  web: false
+  ios: false
